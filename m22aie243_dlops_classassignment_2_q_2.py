@@ -38,8 +38,8 @@ model.fc = nn.Linear(num_ftrs, 10)  # 10 classes in STL10 dataset
 
 # Define optimizers
 optimizers = {
-    'Adam': optim.Adam(model.parameters(), lr=0.001),
-    'Adagrad': optim.Adagrad(model.parameters(), lr=0.01),
+    'Adam': optim.Adam(model.parameters(), lr=0.002),
+    'Adagrad': optim.Adagrad(model.parameters(), lr=0.02),
     'RMSprop': optim.RMSprop(model.parameters(), lr=0.001),
 }
 
